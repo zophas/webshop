@@ -77,3 +77,18 @@ html, body {
   .btn-prod:hover {
     background-color: #4c8d6a;
   }
+   
+  input {
+    border: 1px solid #67be90;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+    border: none;
+    background-color: #67be90;
+    color: white;
+  }
+
+  label {
+    font-weight: 600;
+  }

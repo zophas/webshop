@@ -6,11 +6,8 @@
             Products
         </div>
         @foreach ($products as $product)
-        <div class="card">
-            <div class="card-title">
-                <a href="/products/{{$product->id}}" class="href">{{$product->name}}</a>
-            </div>
-        </div>
+        
+                <a href="/products/{{$product->id}}" class="href">{{$product->name}}</a> <br>
         @endforeach
         <p>{{session('mssg')}}</p>
     </div>
