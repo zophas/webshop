@@ -12,6 +12,8 @@
             <p>{{$product->stock}}</p>
             <h2>Description</h2>
             <p>{{$product->description}}</p>
+            <h2>Seller</h2>
+            <p>{{$user_name[0]->name}}</p>
             @if($product->image_url)
                 <img src="{{$product->image_url}}" alt="">
             @endif
