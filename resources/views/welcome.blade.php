@@ -19,6 +19,7 @@
                         products for you
                     </div> <br>
                     <a class="btn-prod" href="/products">Look at the products</a>
+                    <a class="btn-sell" href="/sellers">Look at the sellers</a>
                 </div> 
             </div>
         </div>

@@ -19,7 +19,6 @@ class ProductController extends Controller
     public function show($id) {
         $product = Product::findOrFail($id);
         $seller_id = DB::table('productsellers')->select('user_id')->where('product_id', '=', $id)->get();
-        var_dump($seller_id[0]->user_id);
         $user_name = DB::table('users')->where('id', '=', $seller_id[0]->user_id)->get();
         return view('products.show', ['product' => $product, 'user_name' => $user_name]);
     }
